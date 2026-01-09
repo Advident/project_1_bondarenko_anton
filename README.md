@@ -30,3 +30,6 @@
 - help — показать список команд
 - quit — выйти из игры
 
+## Демонстрация игрового процесса (asciinema)
+
+[![asciinema](https://asciinema.org/connect/8f8be374-945d-4b77-88a3-6e44baa36206.svg)](https://asciinema.org/connect/8f8be374-945d-4b77-88a3-6e44baa36206)
