@@ -20,7 +20,7 @@ ROOMS = {
     'trap_room': {
           'description': 'Комната с хитрой плиточной поломкой. '
           'На стене видна надпись: "Осторожно — ловушка".',
-          'exits': {'west': 'entrance'},
+          "exits": {"west": "entrance", "north": "secret_tunnel"},
           'items': ['rusty_key'],
           'puzzle': ('Система плит активна. Чтобы пройти, назовите слово "шаг" '
           'три раза подряд (введите "шаг шаг шаг")', 'шаг шаг шаг')
@@ -36,7 +36,7 @@ ROOMS = {
         'armory': {
           'description': 'Старая оружейная комната. '
           'На стене висит меч, рядом — небольшая бронзовая шкатулка.',
-          'exits': {'south': 'library'},
+          "exits": {"south": "library", "east": "garden"},
           'items': ['sword', 'bronze_box'],
           'puzzle': None
     },

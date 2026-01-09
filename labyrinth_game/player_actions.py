@@ -39,7 +39,8 @@ def move_player(game_state: dict, direction: str) -> None:
             print("Дверь заперта. Нужен ключ, чтобы пройти дальше.")
             return
         print("Вы используете найденный ключ, чтобы открыть путь в комнату сокровищ.")
-
+    
+    game_state["current_room"] = next_room
     game_state["steps_taken"] += 1
 
     # вывод новой комнаты + случайное событие
