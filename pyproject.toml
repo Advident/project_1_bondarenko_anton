@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "project1-bondarenko-anton"
+version = "0.1.0"
+description = "Консольная текстовая adventure-игра «Лабиринт сокровищ»."
+authors = ["Adv <advident@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "labyrinth_game" }]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<4.0"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.6.0"
+
+[tool.poetry.scripts]
+project = "labyrinth_game.main:main"
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+exclude = ["venv", ".venv", "dist", "__pycache__"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+ignore = []
+
+[build-system]
+requires = ["poetry-core>=1.8.0"]
+build-backend = "poetry.core.masonry.api"
