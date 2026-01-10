@@ -1,5 +1,7 @@
 """Точка входа в игру: цикл, обработка команд и управление состоянием."""
 
+#!/usr/bin/env python3
+
 from labyrinth_game.constants import COMMANDS
 from labyrinth_game.player_actions import (
     get_input,
